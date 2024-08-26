@@ -1,233 +1,359 @@
 <!DOCTYPE html>
+<!-- Coding By CodeSlyde - www.CodeSlydeweb.com -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeSlyde</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Homepage Clone | CodeSlyde</title>
+  <!-- Linking Unicons For Icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="fav-removebg-preview.png" type="image/x-icon">
-<body>
+<body class="sidebar-hidden">
+  <div class="container">
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="uil uil-bars"></i>
+          </button>
+          <a href="#" class="nav-logo">
+            <img src="fav-removebg-preview.png" alt="Logo" class="logo-image">
+            <h2 class="logo-text">CodeSlyde</h2>
+          </a>
+        </div>
+        
+        <div class="nav-section nav-center">
+          <form action="#" class="search-form">
+            <input type="search" placeholder="Search" class="search-input" required>
+            <button class="nav-button search-button">
+              <i class="uil uil-search"></i>
+            </button>
+          </form>
+          <button class="nav-button mic-button">
+            <i class="uil uil-microphone"></i>
+          </button>
+        </div>
+        
+        <div class="nav-section nav-right">
+          <button class="nav-button search-button">
+            <i class="uil uil-search"></i>
+          </button>
+          <button class="nav-button theme-button">
+            <i class="uil uil-moon"></i>
+          </button>
+          <img src="Codeslyde.png" alt="User Image" class="user-image">
+        </div>
+      </nav>
+    </header>
     
-    <div class="toggler-button" id="sidebarToggler">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+    <!-- Main Layout -->
+    <main class="main-layout">
+      <div class="screen-overlay"></div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="uil uil-bars"></i>
+          </button>
+          <a href="#" class="nav-logo">
+            <img src="images/logo.png" alt="Logo" class="logo-image">
+            <h2 class="logo-text">CnTube</h2>
+          </a>
+        </div>
+  
+        <div class="links-container">
+          <div class="link-section">
+            <a href="#" class="link-item">
+              <i class="uil uil-estate"></i> Home
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-video"></i> Shorts
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-tv-retro"></i> Subscriptions
+            </a>
+          </div>
+          <div class="section-separator"></div>
+  
+          <div class="link-section">
+            <h4 class="section-title">You</h4>
+            <a href="#" class="link-item">
+              <i class="uil uil-user-square"></i> Your channel
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-history"></i> History
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-clock"></i> Watch later
+            </a>
+          </div>
+          <div class="section-separator"></div>
+          
+          <div class="link-section">
+            <h4 class="section-title">Explore</h4>
+            <a href="#" class="link-item">
+              <i class="uil uil-fire"></i> Trending
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-music"></i> Music
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-basketball"></i> Gaming
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-trophy"></i> Sports
+            </a>
+          </div>
+          <div class="section-separator"></div>
+  
+          <div class="link-section">
+            <h4 class="section-title">More from YouTube</h4>
+            <a href="#" class="link-item">
+              <i class="uil uil-shield-plus"></i> YouTube Plus
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-headphones-alt"></i> YouTube Music
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-airplay"></i> YouTube Kids
+            </a>
+          </div>
+          <div class="section-separator"></div>
+  
+          <div class="link-section">
+            <a href="#" class="link-item">
+              <i class="uil uil-setting"></i> Settings
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-file-medical-alt"></i> Report
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-question-circle"></i> Help
+            </a>
+            <a href="#" class="link-item">
+              <i class="uil uil-exclamation-triangle"></i> Feedback
+            </a>
+          </div>
+        </div>
+      </aside>
+  
+      <div class="content-wrapper">
+        <!-- Category List -->
+        <div class="category-list">
+          <button class="category-button active">All</button>
+          <button class="category-button">Website</button>
+          <button class="category-button">Music</button>
+          <button class="category-button">Gaming</button>
+          <button class="category-button">Node.js</button>
+          <button class="category-button">JavaScript</button>
+          <button class="category-button">React.js</button>
+          <button class="category-button">TypeScript</button>
+          <button class="category-button">Coding</button>
+          <button class="category-button">Next.js</button>
+          <button class="category-button">Data analysis</button>
+          <button class="category-button">Web design</button>
+          <button class="category-button">HTML</button>
+          <button class="category-button">Tailwind</button>
+          <button class="category-button">CSS</button>
+          <button class="category-button">Express.js</button>
+        </div>
+        
+        <!-- Video List -->
+        <div class="video-list">
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+              <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">
+              <p class="duration">10:03</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Top 10 Easy To Create JavaScript Games For Beginners</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">27K Views • 4 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">
+              <p class="duration">23:45</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">How to make Responsive Card Slider in HTML CSS & JavaScript</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">42K Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">              <p class="duration">29:43</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Create A Responsive Website with Login & Registration Form in HTML CSS and JavaScript</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">68K Views • 9 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">
+              <p class="duration">38:45</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Build Hangman Game in HTML CSS and JavaScript</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">57K Views • 11 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">              <p class="duration">19:27</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">How to Make Chrome Extension in HTML CSS & JavaScript</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">24K Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">              <p class="duration">16:24</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Create A Draggable Card Slider in HTML CSS and Vanilla JavaScript</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">14.2K Views • 4 days ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">              <p class="duration">37:13</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">How to make Responsive Image Slider in HTML CSS and JavaScript</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">1M Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">              <p class="duration">9:27</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Create Text Typing Effect in HTML CSS & Vanilla JavaScript</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">17K Views • 10 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">              <p class="duration">25:27</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Create Responsive Image Slider in HTML CSS and JavaScript</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">157K Views • 9 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">              <p class="duration">12:24</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Make A Flipping Card UI Design in HTML & CSS</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">85K Views • 2 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">              <p class="duration">30:20</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Easy way to do Multiple File Uploading using HTML CSS and JavaScript</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">7.4K Views • 3 weeks ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">              <p class="duration">11:13</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Build A Responsive Calculator in HTML CSS & JavaScript</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">30K Views • 2 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">              <p class="duration">39:43</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Build A Currency Converter using ReactJS</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">7.2K • 2 weeks ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="video-card">
+            <div class="thumbnail-container">
+                <img src="Codeslyde.png" alt="Video Thumbnail" class="thumbnail" style="object-fit: cover;">              <p class="duration">1:37:13</p>
+            </div>
+            <div class="video-info">
+              <img src="Codeslyde.png" alt="Channel Logo" class="icon">
+              <div class="video-details">
+                <h2 class="title">Responsive Admin Dashboard Panel in HTML CSS and JavaScript</h2>
+                <p class="channel-name">CodeSlyde</p>
+                <p class="views">161K Views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const sidebar = document.querySelector('.sidebar'); // Ensure correct class name
-          const navBar = document.querySelector('.nav-bar');
-          const togglerButton = document.querySelector('.toggler-button');
-        
-          // Function to toggle the sidebar and navbar width
-          function toggleSidebar() {
-            sidebar.classList.toggle('closed');
-            navBar.classList.toggle('full-width');
-          }
-        
-          // Event listener for the toggler button
-          togglerButton.addEventListener('click', toggleSidebar);
-        
-          // Function to handle automatic closing based on screen width
-          function handleResize() {
-            if (window.innerWidth <= 815) {
-              sidebar.classList.add('closed');
-              navBar.classList.add('full-width');
-            } else {
-              sidebar.classList.remove('closed');
-              navBar.classList.remove('full-width');
-            }
-          }
-        
-          // Initial check
-          handleResize();
-        
-          // Listen for window resize
-          window.addEventListener('resize', handleResize);
-        });
-        </script>
-        
-    <div class="main-grid">
-        <section class="sidebar" id="sidebar">
-            <div class="logo">
-                <a href="#" style="text-decoration: none;">
-                    <img src="fav-removebg-preview.png"  alt="">
-                    <h2 style="color: aliceblue; font-size: 1.9rem;">CodeSlyde</h2>
-                </a>
-            </div>
-            <div class="sidebar-inner">
-                <div class="item-container">
-                    <ul class="sidebar-item-section sidebar-item-section1">
-                        <li class="sidebar-active">
-                            <a href="#">
-                                <span class="item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-home">
-                                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                                        <polyline points="9 22 9 12 15 12 15 22" />
-                                    </svg>
-                                </span>
-                                <span class="item-title">
-                                    Home
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube">
-                                        <path
-                                            d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
-                                        <path d="m10 15 5-3-5-3z" />
-                                    </svg>
-                                </span>
-                                <span class="item-title">
-                                    Subscription
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-history">
-                                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-                                        <path d="M3 3v5h5" />
-                                        <path d="M12 7v5l4 2" />
-                                    </svg>
-                                </span>
-                                <span class="item-title">
-                                    History
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock-8">
-                                        <circle cx="12" cy="12" r="10" />
-                                        <polyline points="12 6 12 12 8 14" />
-                                    </svg>
-                                </span>
-                                <span class="item-title">
-                                    Watch Later
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="item-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-thumbs-up">
-                                        <path d="M7 10v12" />
-                                        <path
-                                            d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
-                                    </svg>
-                                </span>
-                                <span class="item-title">
-                                    Liked videos
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-    
-                    <ul class="sidebar-item-section sidebar-item-section2" id="subscription">
-                        <div class="section-title">
-                            Subscription
-                        </div>
-                        <li>
-                            <a href="#">
-                                <span class="subscription-item-icon">
-                                    <img src="https://yt3.googleusercontent.com/UlKrbeZ4Xz79DUbEbF3FvC0FQ4A_cvpIIzhJQ_wigP8CL_Xf_WF-ryYrrtGpqpD9WzAplsUz=s176-c-k-c0x00ffffff-no-rj"
-                                        alt="image">
-                                </span>
-                                <span class="subscription-item-title">
-                                    Hyperplexed
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-    
-                    <ul class="sidebar-item-section3">
-                        <div class="nav-item-section nav-item-section2">
-                            <div class="nav-item">
-                                <span class="nav-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.5 29.602">
-                                        <g id="Group_5" data-name="Group 5" transform="translate(441 -1.553)">
-                                            <path id="Union_1" data-name="Union 1"
-                                                d="M11.46,25.7h-9.2A2.252,2.252,0,0,1,0,23.448a2.194,2.194,0,0,1,.606-1.526c1.358-1.46,3.9-3.656,3.9-10.849a11.1,11.1,0,0,1,9-10.91,15.528,15.528,0,0,1,4.5,0,11.1,11.1,0,0,1,9,10.91c0,7.193,2.542,9.389,3.9,10.849a2.194,2.194,0,0,1,.606,1.526,2.252,2.252,0,0,1-2.257,2.25h-9.2a4.309,4.309,0,0,1-8.579,0Z"
-                                                transform="translate(-441 1.553)" />
-                                        </g>
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="profile-icon">
-                                <span class="profile-pic">
-                                    <img src="https://assets.codepen.io/9240354/internal/avatars/users/default.png"
-                                        alt="Profile">
-                                </span>
-                                <span class="arrow-down-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-chevron-down">
-                                        <path d="m6 9 6 6 6-6" />
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="nav-bar">
-            <div class="nav-item-section nav-item-section1">
+    </main>
+  </div>
 
-                <div class="nav-item" tabindex="0">
-                    <span class="nav-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 36">
-                            <path id="Icon_awesome-fire" data-name="Icon awesome-fire"
-                                d="M15.188,1.678a1.691,1.691,0,0,0-3.1-.917C3.375,13.489,15.75,14.063,15.75,20.25a4.5,4.5,0,1,1-9-.067V14.171a1.688,1.688,0,0,0-2.913-1.16A14.059,14.059,0,0,0,0,22.5a13.5,13.5,0,0,0,27,0C27,10.526,15.188,8.93,15.188,1.678Z"
-                                transform="translate(0 0)" />
-                        </svg>
-                    </span>
-                </div>
-            </div>
-            <div class="search-bar-section">
-                <input type="text" placeholder="search" />
-                <button class="search-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path
-                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                    </svg>
-                </button>
-            </div>
-            <div class="nav-item-section nav-item-section2">
-                <div class="nav-item" tabindex="0">
-                    <span class="nav-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.147 18">
-                            <path
-                                d="M16.98,18H3.621A3.622,3.622,0,0,1,0,14.386V3.614A3.618,3.618,0,0,1,3.614,0H16.973a3.618,3.618,0,0,1,3.614,3.614v.167L23.426,1.99a1.205,1.205,0,0,1,.654-.19h1.462a.6.6,0,0,1,.6.6V15.617a.6.6,0,0,1-.6.6H24.08a1.265,1.265,0,0,1-.654-.19l-2.839-1.792v.147A3.618,3.618,0,0,1,16.98,18ZM6.749,7.5a1.5,1.5,0,1,0,0,3h2.43v2.312a1.5,1.5,0,1,0,3,0V10.5h2.43a1.5,1.5,0,0,0,0-3h-2.43V5.188a1.5,1.5,0,0,0-3,0V7.5Z" />
-                        </svg>
-                    </span>
-                </div>
-                <div class="nav-item-section nav-item-section2">
-                    <div class="nav-item" tabindex="0">
-                        <span class="nav-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.5 29.602">
-                                <g id="Group_5" data-name="Group 5" transform="translate(441 -1.553)">
-                                    <path id="Union_1" data-name="Union 1"
-                                        d="M11.46,25.7h-9.2A2.252,2.252,0,0,1,0,23.448a2.194,2.194,0,0,1,.606-1.526c1.358-1.46,3.9-3.656,3.9-10.849a11.1,11.1,0,0,1,9-10.91,15.528,15.528,0,0,1,4.5,0,11.1,11.1,0,0,1,9,10.91c0,7.193,2.542,9.389,3.9,10.849a2.194,2.194,0,0,1,.606,1.526,2.252,2.252,0,0,1-2.257,2.25h-9.2a4.309,4.309,0,0,1-8.579,0Z"
-                                        transform="translate(-441 1.553)" />
-                                </g>
-                            </svg>
-                        </span>
-                    </div>
-                </div>
-        </section>
-    </div>
-
-
+  <!-- Linking custom script -->
+  <script src="script.js"></script>
 </body>
 </html>
