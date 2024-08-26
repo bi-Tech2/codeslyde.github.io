@@ -370,7 +370,7 @@ body.sidebar-hidden .main-layout .sidebar {
   .main-layout .sidebar .nav-left {
     display: flex;
   }
-  .content-wrapper .category-list {
-    margin-left: 1.3px;
+  .content-wrapper {
+    gap: 2px;
   }
 }
