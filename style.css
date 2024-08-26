@@ -364,5 +364,8 @@ body {
       top: 75px;  /* Adjust positioning */
       left: 30px;
     }
+    .bed{
+        display: none;
+    }
   }
   
